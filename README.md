@@ -36,7 +36,7 @@ The second step also included applying a robust scaler to both the training and 
 
     
 
-## [Regression Analysis](https://github.com/pcmaldonado/Predicting_used_cars_price/tree/main/RegressionAnalysis)
+## [Regression Analysis](https://github.com/pcmaldonado/Predicting_used_cars_price/tree/main/Modelling_RegressionAnalysis)
 The regression analysis included 5 steps:
 * Choosing the metrics used for performance: RMSE, MAE & R²
 * A first round of modelling as benchmark using 7 different algorithms (LinearRegression, KNeighbors, RandomForest, AdaBoost, ...)
