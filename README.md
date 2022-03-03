@@ -1,5 +1,5 @@
 # Predicting Used Car Prices 🏎️ 🚗 🚙
-The model is currently deployed on https://estimateur-prix-voiture.herokuapp.com/ *(in french)*.
+The model is currently deployed on https://estimateur-prix-voiture.herokuapp.com/ *(in french)*, and the building repository is available [here](https://github.com/pcmaldonado/Estimateur_prix_voiture).
 
 ## Data
 The data was collected from a popular french ad site (almost 50,000 ads were collected) and ten different features were extracted to later predict prices (brand, kms, number of doors, etc.). 
