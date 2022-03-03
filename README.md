@@ -15,7 +15,7 @@ Complementary data about car brands was scraped from different sources (origin &
 * To do so, feature engineering & feature selection was conducted to clean the dataset
 * New features were added to better estimate the relationship between brands & price
 * The best algorithm and its optimal parameters were chosen using k-fold cross validation 
-* The final model is a XGBoosting regressor with a MAE score of 3803 and a R² of 0.87 on test data (for  reference, mean test price: 26,155 and std price: 24,773)
+* The final model is a XGBoosting regressor with a MAE score of 3803 and a R² of 0.87 on test data *(for  reference, mean test price: 26,155 and std price: 24,773)*
 * The top 3 most important features were whether the car had a manual transmission, if the brand was considered as "luxury" and if the car came from Germany
 
 One way to further improve the performance would be to collect more data, introduce/keep more features and possibly build different regression algorithms trained for different brands to get more detailed information without risk of overfitting.
