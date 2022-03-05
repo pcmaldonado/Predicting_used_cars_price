@@ -15,7 +15,7 @@ Complementary data about car brands was scraped from different sources (origin &
 * Scraped around 50,000 ads of selling cars from a popular french website using python (BeautifulSoup)
 * Engineered features from additional scraped data on brands (luxury brands & origin)
 * Explored 9 different models, then applied GridsearchCV to the better performing ones to get the best model
-* Built a client facing site using Flask that lets users input car features to get an estimate of its selling price
+* Built a site using Flask that lets users input car features to get an estimate of its selling price
 
 <br>
 
