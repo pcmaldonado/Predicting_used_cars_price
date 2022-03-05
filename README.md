@@ -10,16 +10,14 @@ Complementary data about car brands was scraped from different sources (origin &
 * Python Version: 3.9.7
 * Packages: numpy, pandas, matplotlib, seaborn, sklearn, pickle, joblib, feature_engine, scikit_learn, xgboost, shap
 
-# Overview
-* The objective of this analysis is to predict and better understand the variables that determine the selling price of used cars. 
-* To do so, feature engineering & feature selection was conducted to clean the dataset
-* New features were added to better estimate the relationship between brands & price
-* The best algorithm and its optimal parameters were chosen using k-fold cross validation 
-* The final model is a XGBoosting regressor with a MAE score of 3803 and a R² of 0.87 on test data *(for  reference, mean test price: 26,155 and std price: 24,773)*
-* The top 3 most important features were whether the car had a manual transmission, if the brand was considered as "luxury" and if the car came from Germany
+## Overview
+* Created a tool that estimates the selling price of used cars to help people evaluate their cars before selling or buying one
+* Scraped around 50,000 ads of selling cars from a popular french website using python (BeautifulSoup)
+* Engineered features from additional scraped data on brands (luxury brands & origin)
+* Explored 9 different models, then applied GridsearchCV to the better performing ones to get the best model
+* Built a client facing site using Flask that lets users input car features to get an estimate of its selling price
 
-One way to further improve the performance would be to collect more data, introduce/keep more features and possibly build different regression algorithms trained for different brands to get more detailed information without risk of overfitting.
-
+<br>
 
 ## [EDA & Preprocessing](https://github.com/pcmaldonado/Predicting_used_cars_price/tree/main/EDA_Preprocessing)
 The preprocessing was done in two steps:
