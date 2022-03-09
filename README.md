@@ -1,5 +1,7 @@
 # Predicting Used Car Prices 🏎️ 🚗 🚙
-The model is currently deployed on https://estimateur-prix-voiture.herokuapp.com/ *(in french)*, and the code used for deployment is available [here](https://github.com/pcmaldonado/Estimateur_prix_voiture).
+After collecting data from a popular french ad site, a regression model was trained to predict car prices. A web application was built to deploy the model and is currently available on https://estimateur-prix-voiture.herokuapp.com/ *(in french)*. 
+
+The code used for deployment is available [here](https://github.com/pcmaldonado/Estimateur_prix_voiture).
 
 ## Data
 The data was collected from a popular french ad site (almost 50,000 ads were collected) and ten different features were extracted to later predict prices (brand, kms, number of doors, etc.). 
@@ -8,14 +10,13 @@ Complementary data about car brands was scraped from different sources (origin &
 
 ### Use of:
 * Python Version: 3.9.7
-* Packages: numpy, pandas, matplotlib, seaborn, sklearn, pickle, joblib, feature_engine, scikit_learn, xgboost, shap
+* Packages: BeautifulSoup, NumPy, Pandas, Matplotlib, Seaborn, Sklearn, Pickle, Feature_engine,  Xgboost, Shap
 
 ## Overview
-* Created a tool that estimates the selling price of used cars to help people evaluate their cars before selling or buying one
+* Created a web application using Flask where users can get an estimation of the selling price of a car, based on a regression model, which can help people before selling or buying a car
 * Scraped around 50,000 ads of selling cars from a popular french website using python (BeautifulSoup)
 * Engineered features from additional scraped data on brands (luxury brands & origin)
 * Explored 9 different models, then applied GridsearchCV to the better performing ones to get the best model
-* Built a site using Flask that lets users input car features to get an estimate of its selling price
 
 <br>
 
@@ -32,9 +33,7 @@ The preprocessing consisted on applying feature engineering:
 * feature scaling was applied
 The second step also included applying a robust scaler to both the training and the test sets.
 
-<br> ==>The final trainining set contains 43,713 rows and 25 features.
-
-    
+    <br>
 
 ## [Regression Analysis](https://github.com/pcmaldonado/Predicting_used_cars_price/tree/main/Modelling_RegressionAnalysis)
 The regression analysis included 4 steps:
